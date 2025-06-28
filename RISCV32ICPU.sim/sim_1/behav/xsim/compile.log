@@ -1,0 +1,81 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/bram_img2b/sim/bram_img2b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_img2b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/bram_img2g/sim/bram_img2g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_img2g
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/bram_img2r/sim/bram_img2r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_img2r
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/bram_img1b/sim/bram_img1b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_img1b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/br_img1g/sim/br_img1g.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module br_img1g
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/bram_img1r/sim/bram_img1r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_img1r
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module Shifter
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module cla_4
+INFO: [VRFC 10-311] analyzing module cla_adder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/DATAMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DATAMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/INPUT_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INPUT_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGAoutput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGAoutput
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/addrmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addrmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/alumux1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alumux1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/alumux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alumux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/bdtrans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bdtrans
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/colorpart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module colorpart
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpu_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_core
+INFO: [VRFC 10-2458] undeclared symbol ALU_OverFlow, assumed default net type wire [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpu_core.v:326]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpudecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpudecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpuregfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuregfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/disp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module disp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/inst_past.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_past
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-311] analyzing module main_control
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/offset_create.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module offset_create
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/offsetmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module offsetmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module outputpicture
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/readmux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module readmux
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/time_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/riscvcpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

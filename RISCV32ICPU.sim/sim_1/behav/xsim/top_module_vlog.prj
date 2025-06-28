@@ -1,0 +1,44 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/bram_img2b/sim/bram_img2b.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/bram_img2g/sim/bram_img2g.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/bram_img2r/sim/bram_img2r.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/bram_img1b/sim/bram_img1b.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/br_img1g/sim/br_img1g.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/bram_img1r/sim/bram_img1r.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/ALU_1.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/DATAMEM.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/INPUT_module.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/PC.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/VGAoutput.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/addrmux.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/alumux1.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/alumux2.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/bdtrans.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/colorpart.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/cpu_core.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/cpudecoder.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/cpuregfile.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/disp.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/inst_past.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/instr_memory.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/main_control_1.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/offset_create.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/offsetmux.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/outputpicture.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/readmux.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/reg_EX_MEM.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/reg_ID_EX.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/reg_IF_ID.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/reg_MEM_WB.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/time_divider.v" \
+"../../../../RISCV32ICPU.srcs/sources_1/new/riscvcpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
