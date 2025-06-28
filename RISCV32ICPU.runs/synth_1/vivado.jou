@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan  8 09:14:23 2024
+# Process ID: 50740
+# Current directory: D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/synth_1
+# Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/synth_1/top_module.vds
+# Journal file: D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace

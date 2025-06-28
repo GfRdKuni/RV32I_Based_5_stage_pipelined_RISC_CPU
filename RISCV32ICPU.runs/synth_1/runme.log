@@ -1,0 +1,1172 @@
+
+*** Running vivado
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top_module.tcl -notrace
+Command: synth_design -top top_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 55616 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 803.422 ; gain = 178.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/riscvcpu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'time_divider' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/time_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_divider' (1#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/time_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'INPUT_module' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/INPUT_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'INPUT_module' (2#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/INPUT_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpu_core' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpu_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'addrmux' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/addrmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'addrmux' (4#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/addrmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_memory' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:23]
+INFO: [Synth 8-4471] merging register 'rom_reg[18][31:0]' into 'rom_reg[26][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[17][31:0]' into 'rom_reg[25][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[16][31:0]' into 'rom_reg[23][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[15][31:0]' into 'rom_reg[20][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[13][31:0]' into 'rom_reg[23][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[9][31:0]' into 'rom_reg[10][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[6][31:0]' into 'rom_reg[10][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+INFO: [Synth 8-4471] merging register 'rom_reg[5][31:0]' into 'rom_reg[10][31:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[18] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[17] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[16] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[15] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[13] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[9] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[6] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-6014] Unused sequential element rom_reg[5] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:36]
+WARNING: [Synth 8-3848] Net rom[63] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[62] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[61] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[60] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[59] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[58] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[57] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[56] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[55] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[54] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[53] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[52] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[51] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[50] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[49] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[48] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[47] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[46] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[45] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[44] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[43] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[42] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[41] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[40] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[39] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[38] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[37] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[36] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[35] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[34] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+WARNING: [Synth 8-3848] Net rom[33] in module/entity instr_memory does not have driver. [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'instr_memory' (5#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/instr_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_IF_ID' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_IF_ID.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reg_IF_ID' (6#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_IF_ID.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpudecoder' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpudecoder.v:23]
+	Parameter B_type bound to: 7'b1100011 
+	Parameter LUI bound to: 7'b0110111 
+	Parameter AUIPC bound to: 7'b0010111 
+	Parameter JAL bound to: 7'b1101111 
+	Parameter JALR bound to: 7'b1100111 
+	Parameter L_type bound to: 7'b0000011 
+	Parameter S_type bound to: 7'b0100011 
+	Parameter I_type bound to: 7'b0010011 
+	Parameter R_type bound to: 7'b0110011 
+INFO: [Synth 8-6155] done synthesizing module 'cpudecoder' (7#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpudecoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpuregfile' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpuregfile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cpuregfile' (8#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpuregfile.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'main_control' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'main_control' (9#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:104]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:227]
+	Parameter ADD bound to: 4'b0000 
+	Parameter SUB bound to: 4'b0011 
+	Parameter AND bound to: 4'b0100 
+	Parameter OR bound to: 4'b0101 
+	Parameter XOR bound to: 4'b0110 
+	Parameter NOR bound to: 4'b0111 
+	Parameter COMP bound to: 4'b1000 
+	Parameter UCOMP bound to: 4'b1001 
+	Parameter LLEFT bound to: 4'b1100 
+	Parameter LRIGHT bound to: 4'b1101 
+	Parameter ARIGHT bound to: 4'b1110 
+INFO: [Synth 8-226] default block is never used [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:279]
+INFO: [Synth 8-226] default block is never used [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:299]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (10#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (11#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/main_control_1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'offsetmux' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/offsetmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'offsetmux' (12#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/offsetmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'offset_create' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/offset_create.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'offset_create' (13#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/offset_create.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_past' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/inst_past.v:23]
+	Parameter lui bound to: 7'b0110111 
+	Parameter auipc bound to: 7'b0010111 
+	Parameter jal bound to: 7'b1101111 
+	Parameter jalr bound to: 7'b1100111 
+	Parameter R_type bound to: 7'b0110011 
+	Parameter I_type bound to: 7'b0010011 
+	Parameter L_type bound to: 7'b0000011 
+INFO: [Synth 8-6155] done synthesizing module 'inst_past' (14#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/inst_past.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_ID_EX' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_ID_EX.v:23]
+	Parameter zero bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_ID_EX' (15#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_ID_EX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'readmux' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/readmux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'readmux' (16#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/readmux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alumux1' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/alumux1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alumux1' (17#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/alumux1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alumux2' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/alumux2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alumux2' (18#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/alumux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Shifter' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'Shifter' (19#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:152]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:174]
+INFO: [Synth 8-6157] synthesizing module 'cla_adder32' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:210]
+INFO: [Synth 8-6157] synthesizing module 'cla_4' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'cla_4' (20#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'cla_adder32' (21#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:210]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (22#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (23#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/ALU_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_EX_MEM' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_EX_MEM.v:23]
+	Parameter zero bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_EX_MEM' (24#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_EX_MEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DATAMEM' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/DATAMEM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DATAMEM' (25#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/DATAMEM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_MEM_WB' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_MEM_WB.v:23]
+	Parameter zero bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_MEM_WB' (26#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/reg_MEM_WB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_core' (27#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/cpu_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'disp' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/disp.v:23]
+	Parameter M bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bdtrans' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/bdtrans.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bdtrans' (28#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/bdtrans.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'disp' (29#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/disp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGAoutput' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGAoutput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/synth_1/.Xil/Vivado-50740-LGORVKE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (30#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/synth_1/.Xil/Vivado-50740-LGORVKE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'VGA_ctr' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:23]
+	Parameter hpw_end bound to: 10'b0001011111 
+	Parameter hbp_end bound to: 10'b0010001111 
+	Parameter hdata_end bound to: 10'b1100001111 
+	Parameter hfp_end bound to: 10'b1100011111 
+	Parameter vpw_end bound to: 10'b0000000001 
+	Parameter vbp_end bound to: 10'b0000011110 
+	Parameter vdata_end bound to: 10'b0111111110 
+	Parameter vfp_end bound to: 10'b1000001000 
+INFO: [Synth 8-6155] done synthesizing module 'VGA_ctr' (31#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'colorpart' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/colorpart.v:23]
+INFO: [Synth 8-6157] synthesizing module 'outputpicture' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:23]
+	Parameter HEIGHT bound to: 10'b0000110111 
+	Parameter WIDTH bound to: 10'b0000110111 
+	Parameter RMAR bound to: 10'b0000010110 
+	Parameter LMAR bound to: 10'b0000010111 
+	Parameter MAR bound to: 10'b0000000101 
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3023][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3022][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3021][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3020][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3019][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3018][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3017][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3016][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3015][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3014][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3013][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3012][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3011][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3010][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3009][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3008][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3007][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3006][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3005][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3004][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3003][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3002][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3001][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[3000][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2999][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2998][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2997][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2996][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2995][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2994][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2993][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2992][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2991][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2990][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2989][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2988][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2987][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2986][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2985][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2984][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2983][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2982][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2981][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2980][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2979][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2978][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2977][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2976][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2975][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2974][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2973][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2972][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2971][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2970][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2969][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2968][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2967][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2966][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2965][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2964][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2963][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2962][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2961][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2960][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2959][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2958][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2957][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2956][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2955][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2954][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2953][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2952][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2951][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2950][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2949][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2948][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2947][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2946][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2945][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2944][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2943][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2942][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2941][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2940][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2939][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2938][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2937][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2936][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2935][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2934][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2933][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Synth 8-4471] merging register 'r_chickenpic_reg[2932][3:0]' into 'r_chickenpic_reg[3024][3:0]' [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3023] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3022] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3021] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3020] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3019] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3018] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3017] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3016] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3015] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3014] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3013] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3012] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3011] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3010] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3009] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3008] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3007] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3006] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3005] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3004] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3003] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3002] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3001] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[3000] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2999] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2998] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2997] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2996] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2995] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2994] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2993] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2992] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2991] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2990] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2989] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2988] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2987] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2986] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2985] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2984] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2983] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2982] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2981] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2980] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2979] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2978] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2977] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2976] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2975] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2974] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2973] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2972] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2971] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2970] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2969] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2968] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2967] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2966] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2965] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2964] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2963] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2962] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2961] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2960] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2959] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2958] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2957] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2956] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2955] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2954] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2953] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2952] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2951] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2950] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2949] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2948] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2947] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2946] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2945] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2944] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2943] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2942] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2941] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2940] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2939] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2938] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2937] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2936] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2935] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2934] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2933] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+WARNING: [Synth 8-6014] Unused sequential element r_chickenpic_reg[2932] was removed.  [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:470]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'outputpicture' (32#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/outputpicture.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'colorpart' (33#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/colorpart.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGAoutput' (34#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGAoutput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (35#1) [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/riscvcpu.v:23]
+WARNING: [Synth 8-3331] design outputpicture has unconnected port data_read_active
+WARNING: [Synth 8-3331] design outputpicture has unconnected port picture_active
+WARNING: [Synth 8-3331] design reg_ID_EX has unconnected port MemtoReg_ID
+WARNING: [Synth 8-3331] design offsetmux has unconnected port jal
+WARNING: [Synth 8-3331] design alu_control has unconnected port func7[6]
+WARNING: [Synth 8-3331] design alu_control has unconnected port func7[4]
+WARNING: [Synth 8-3331] design alu_control has unconnected port func7[3]
+WARNING: [Synth 8-3331] design alu_control has unconnected port func7[2]
+WARNING: [Synth 8-3331] design alu_control has unconnected port func7[1]
+WARNING: [Synth 8-3331] design alu_control has unconnected port func7[0]
+WARNING: [Synth 8-3331] design instr_memory has unconnected port addr[7]
+WARNING: [Synth 8-3331] design instr_memory has unconnected port addr[6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:30 ; elapsed = 00:10:52 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:35 ; elapsed = 00:11:01 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:35 ; elapsed = 00:11:01 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'OUTMODULE/clk_inst'
+Finished Parsing XDC File [d:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'OUTMODULE/clk_inst'
+Parsing XDC File [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/constrs_1/new/cpu_constraints.xdc]
+Finished Parsing XDC File [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/constrs_1/new/cpu_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/constrs_1/new/cpu_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1895.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1895.426 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:42 ; elapsed = 00:11:21 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:42 ; elapsed = 00:11:21 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  d:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  d:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for OUTMODULE/clk_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:42 ; elapsed = 00:11:21 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "in_ten" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "in_one" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sseg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:07:42 ; elapsed = 00:20:44 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DATAMEM__GB0        |           1|     52907|
+|2     |DATAMEM__GB1        |           1|     15480|
+|3     |DATAMEM__GB2        |           1|     17406|
+|4     |cpu_core__GC0       |           1|      8139|
+|5     |outputpicture__GB0  |           1|     31405|
+|6     |outputpicture__GB1  |           1|     12196|
+|7     |outputpicture__GB2  |           1|     12472|
+|8     |outputpicture__GB3  |           1|     24872|
+|9     |outputpicture__GB4  |           1|     28170|
+|10    |outputpicture__GB5  |           1|     16329|
+|11    |outputpicture__GB6  |           1|     11241|
+|12    |outputpicture__GB7  |           1|       201|
+|13    |outputpicture__GB8  |           1|       260|
+|14    |outputpicture__GB9  |           1|       336|
+|15    |outputpicture__GB10 |           1|     16905|
+|16    |outputpicture__GB11 |           1|     21793|
+|17    |outputpicture__GB12 |           1|     18705|
+|18    |outputpicture__GB13 |           1|     18642|
+|19    |outputpicture__GB14 |           1|     15584|
+|20    |colorpart__GC0      |           1|        16|
+|21    |VGAoutput__GC0      |           1|       325|
+|22    |top_module__GC0     |           1|      1317|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     12 Bit       Adders := 75    
+	   2 Input     12 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 104   
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 35    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 500   
+	   4 Input     32 Bit        Muxes := 137   
+	   6 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 87    
+	   8 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	 101 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 523   
+	   4 Input      1 Bit        Muxes := 63    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DATAMEM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 475   
+	   4 Input     32 Bit        Muxes := 135   
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 496   
+	   4 Input      1 Bit        Muxes := 62    
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module addrmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module instr_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 25    
+Module reg_IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module cpudecoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
+Module cpuregfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   5 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+Module main_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module alu_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+Module offsetmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module offset_create 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module inst_past 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module reg_ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module readmux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module alumux1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module alumux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module cla_adder32 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module reg_EX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+Module reg_MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module outputpicture 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 75    
+	   2 Input     12 Bit       Adders := 7     
++---Registers : 
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 74    
+Module colorpart 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+Module VGA_ctr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+Module time_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module INPUT_module 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 7     
+Module bdtrans__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	 101 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module bdtrans 
+Detailed RTL Component Info : 
++---Muxes : 
+	 101 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module disp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/rEM/MemtoReg_MEM_reg' (FDC) to 'RISCVCPUi_4/rEM/MemRead_MEM_reg'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[32][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[31][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[30][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[29][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[28][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[27][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[24][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[22][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[21][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[19][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[26][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[25][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[20][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[14][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[23][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[12][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[11][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[8][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[7][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[10][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[4][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[3][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[2][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[1][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[0][11]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[32][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[31][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[30][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[29][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[28][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[27][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[24][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[22][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[21][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[19][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[26][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[25][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[20][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[14][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[23][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[12][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[11][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[8][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[7][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[10][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[4][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[3][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[2][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[1][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[0][10]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[32][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[31][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[30][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[29][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[28][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[27][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[24][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[22][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[21][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[19][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[26][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[25][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[20][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[14][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[23][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[12][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[11][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[8][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[7][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[10][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[4][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[3][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[2][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[1][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[0][9]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[32][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[31][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[30][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[29][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[28][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[27][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[24][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[22][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[21][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[19][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[26][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[25][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[20][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[14][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[23][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[12][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[11][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[8][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[7][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[10][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[4][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][31]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[3][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[2][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Synth 8-3886] merging instance 'RISCVCPUi_4/INSMEM/rom_reg[1][8]' (FD_1) to 'RISCVCPUi_4/INSMEM/rom_reg[1][24]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RISCVCPUi_4/INSMEM/\rom_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (RISCVCPUi_4/INSMEM/\rom_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RISCVCPUi_4/INSP/\last_inst_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RISCVCPUi_4/rIE/beq_EX_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (OUTMODULEi_21/\vgactr/v_addr_reg[9] )
+DSP Report: Generating DSP r_chickenpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_chickenpic2 is absorbed into DSP r_chickenpic2.
+DSP Report: Generating DSP r_chickenpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_chickenpic2 is absorbed into DSP r_chickenpic2.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\r_chickenpic_reg[3024][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r_chickenpic_reg[2779][3] )
+DSP Report: Generating DSP r_rabbitpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_rabbitpic2 is absorbed into DSP r_rabbitpic2.
+DSP Report: Generating DSP r_rabbitpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_rabbitpic2 is absorbed into DSP r_rabbitpic2.
+DSP Report: Generating DSP r_rabbitpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_rabbitpic2 is absorbed into DSP r_rabbitpic2.
+DSP Report: Generating DSP r_chickenpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_chickenpic2 is absorbed into DSP r_chickenpic2.
+DSP Report: Generating DSP r_chickenpic1, operation Mode is: PCIN+(A:0x0):B+(C:0xfffffffffdce).
+DSP Report: operator r_chickenpic1 is absorbed into DSP r_chickenpic1.
+DSP Report: Generating DSP r_chickenpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_chickenpic2 is absorbed into DSP r_chickenpic2.
+DSP Report: Generating DSP r_chickenpic2, operation Mode is: A*(B:0x37).
+DSP Report: operator r_chickenpic2 is absorbed into DSP r_chickenpic2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:56 ; elapsed = 00:23:10 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------------------+---------------+----------------+
+|Module Name | RTL Object                | Depth x Width | Implemented As | 
++------------+---------------------------+---------------+----------------+
+|top_module  | LEDPART/transleft/in_ten  | 128x4         | LUT            | 
+|top_module  | LEDPART/transleft/in_one  | 128x4         | LUT            | 
+|top_module  | LEDPART/transright/in_ten | 128x4         | LUT            | 
+|top_module  | LEDPART/transright/in_one | 128x4         | LUT            | 
++------------+---------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------------+-------------+-----------+----------------------+---------------+
+|Module Name         | RTL Object  | Inference | Size (Depth x Width) | Primitives    | 
++--------------------+-------------+-----------+----------------------+---------------+
+|RISCVCPUi_4/REGFILE | regfile_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++--------------------+-------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 10     | 6      | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture__GB14 | PCIN+(A:0x0):B+(C:0xfffffffffdce) | 30     | 10     | 11     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|outputpicture       | A*(B:0x37)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DATAMEM__GB0        |           1|     32365|
+|2     |DATAMEM__GB1        |           1|      3881|
+|3     |DATAMEM__GB2        |           1|      5035|
+|4     |cpu_core__GC0       |           1|      2999|
+|5     |outputpicture__GB0  |           1|      6438|
+|6     |outputpicture__GB1  |           1|      2784|
+|7     |outputpicture__GB2  |           1|      2904|
+|8     |outputpicture__GB3  |           1|      2448|
+|9     |outputpicture__GB4  |           1|      6288|
+|10    |outputpicture__GB5  |           1|      7778|
+|11    |outputpicture__GB6  |           1|      2895|
+|12    |outputpicture__GB7  |           1|        64|
+|13    |outputpicture__GB8  |           1|        74|
+|14    |outputpicture__GB9  |           1|        84|
+|15    |outputpicture__GB10 |           1|      4084|
+|16    |outputpicture__GB11 |           1|      4758|
+|17    |outputpicture__GB12 |           1|      4048|
+|18    |outputpicture__GB13 |           1|      3984|
+|19    |outputpicture__GB14 |           1|      3457|
+|20    |colorpart__GC0      |           1|         6|
+|21    |VGAoutput__GC0      |           1|       223|
+|22    |top_module__GC0     |           1|       772|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_inst/clk_out1' to pin 'clk_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:59 ; elapsed = 00:23:18 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:09:00 ; elapsed = 00:23:22 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++--------------------+-------------+-----------+----------------------+---------------+
+|Module Name         | RTL Object  | Inference | Size (Depth x Width) | Primitives    | 
++--------------------+-------------+-----------+----------------------+---------------+
+|RISCVCPUi_4/REGFILE | regfile_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++--------------------+-------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DATAMEM__GB0        |           1|     32365|
+|2     |DATAMEM__GB1        |           1|      3881|
+|3     |DATAMEM__GB2        |           1|      5035|
+|4     |cpu_core__GC0       |           1|      2999|
+|5     |outputpicture__GB0  |           1|      3081|
+|6     |outputpicture__GB1  |           1|      1134|
+|7     |outputpicture__GB2  |           1|      1248|
+|8     |outputpicture__GB3  |           1|      2442|
+|9     |outputpicture__GB4  |           1|      2999|
+|10    |outputpicture__GB5  |           1|      2949|
+|11    |outputpicture__GB6  |           1|      1226|
+|12    |outputpicture__GB7  |           1|        64|
+|13    |outputpicture__GB8  |           1|        74|
+|14    |outputpicture__GB9  |           1|        84|
+|15    |outputpicture__GB10 |           1|      1868|
+|16    |outputpicture__GB11 |           1|      2187|
+|17    |outputpicture__GB12 |           1|      1868|
+|18    |outputpicture__GB13 |           1|      1804|
+|19    |outputpicture__GB14 |           1|      1536|
+|20    |colorpart__GC0      |           1|         6|
+|21    |VGAoutput__GC0      |           1|       223|
+|22    |top_module__GC0     |           1|       699|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:09:02 ; elapsed = 00:23:32 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |DATAMEM__GB0        |           1|     12151|
+|2     |DATAMEM__GB1        |           1|      1112|
+|3     |DATAMEM__GB2        |           1|      1701|
+|4     |cpu_core__GC0       |           1|      1116|
+|5     |outputpicture__GB0  |           1|      1059|
+|6     |outputpicture__GB1  |           1|       296|
+|7     |outputpicture__GB2  |           1|       539|
+|8     |outputpicture__GB3  |           1|       780|
+|9     |outputpicture__GB4  |           1|      1003|
+|10    |outputpicture__GB5  |           1|       752|
+|11    |outputpicture__GB6  |           1|       389|
+|12    |outputpicture__GB7  |           1|        21|
+|13    |outputpicture__GB8  |           1|        27|
+|14    |outputpicture__GB9  |           1|        34|
+|15    |outputpicture__GB10 |           1|       600|
+|16    |outputpicture__GB11 |           1|       658|
+|17    |outputpicture__GB12 |           1|       607|
+|18    |outputpicture__GB13 |           1|       583|
+|19    |outputpicture__GB14 |           1|       614|
+|20    |colorpart__GC0      |           1|         4|
+|21    |VGAoutput__GC0      |           1|       113|
+|22    |top_module__GC0     |           1|       313|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:83]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.srcs/sources_1/new/VGA_ctr.v:94]
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:09:04 ; elapsed = 00:23:36 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:04 ; elapsed = 00:23:36 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:04 ; elapsed = 00:23:37 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:04 ; elapsed = 00:23:37 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:05 ; elapsed = 00:23:38 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:05 ; elapsed = 00:23:38 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |   253|
+|4     |DSP48E1   |     8|
+|5     |DSP48E1_1 |     1|
+|6     |LUT1      |    79|
+|7     |LUT2      |  1147|
+|8     |LUT3      |   571|
+|9     |LUT4      |  1127|
+|10    |LUT5      |  2640|
+|11    |LUT6      | 13307|
+|12    |MUXF7     |  2031|
+|13    |MUXF8     |   902|
+|14    |RAM32M    |    18|
+|15    |FDCE      |   487|
+|16    |FDPE      |     1|
+|17    |FDRE      |  2069|
+|18    |IBUF      |     6|
+|19    |OBUF      |    26|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+--------------+------+
+|      |Instance       |Module        |Cells |
++------+---------------+--------------+------+
+|1     |top            |              | 24676|
+|2     |  INPUTMODULE  |INPUT_module  |   208|
+|3     |  LEDPART      |disp          |    46|
+|4     |    transleft  |bdtrans       |     8|
+|5     |    transright |bdtrans_0     |     8|
+|6     |  OUTMODULE    |VGAoutput     |  7838|
+|7     |    COLORPART  |colorpart     |  4390|
+|8     |      OPTP     |outputpicture |  4390|
+|9     |    vgactr     |VGA_ctr       |  3446|
+|10    |  RISCVCPU     |cpu_core      | 16531|
+|11    |    ALUMUX2    |alumux2       |    32|
+|12    |    DATAMEMORY |DATAMEM       |  4282|
+|13    |    INSMEM     |instr_memory  |     6|
+|14    |    INSP       |inst_past     |    40|
+|15    |    PCREG      |PC            |    27|
+|16    |    REGFILE    |cpuregfile    |    18|
+|17    |    rEM        |reg_EX_MEM    | 11308|
+|18    |    rFD        |reg_IF_ID     |    62|
+|19    |    rIE        |reg_ID_EX     |   652|
+|20    |    rMW        |reg_MEM_WB    |   104|
+|21    |  TD           |time_divider  |    19|
++------+---------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:05 ; elapsed = 00:23:38 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:26 ; elapsed = 00:23:29 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+Synthesis Optimization Complete : Time (s): cpu = 00:09:05 ; elapsed = 00:23:39 . Memory (MB): peak = 1895.426 ; gain = 1270.191
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 18 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1895.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+310 Infos, 143 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:07 ; elapsed = 00:23:45 . Memory (MB): peak = 1895.426 ; gain = 1507.941
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1895.426 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  8 09:38:16 2024...

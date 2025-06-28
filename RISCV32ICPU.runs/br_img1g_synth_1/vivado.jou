@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  6 10:47:43 2024
+# Process ID: 6940
+# Current directory: D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/br_img1g_synth_1
+# Command line: vivado.exe -log br_img1g.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source br_img1g.tcl
+# Log file: D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/br_img1g_synth_1/br_img1g.vds
+# Journal file: D:/Xilinx_Vivado_SDK_2019.1_0524_1430/project/RISCV32ICPU/RISCV32ICPU.runs/br_img1g_synth_1\vivado.jou
+#-----------------------------------------------------------
+source br_img1g.tcl -notrace
