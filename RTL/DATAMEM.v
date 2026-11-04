@@ -79,8 +79,10 @@ module DATAMEM(
     assign pr_now = datamem[addr[31:2]];
     assign addr_next = addr + 4;
     assign pr_next = datamem[addr_next[31:2]];
-    assign rabbitout = datamem[8];
-    assign chickenout = datamem[7];
+    // Public count ports carry logical words; internal words pack the lowest
+    // addressed byte in bits 31:24, as used by the load/store logic below.
+    assign rabbitout = {datamem[8][7:0], datamem[8][15:8], datamem[8][23:16], datamem[8][31:24]};
+    assign chickenout = {datamem[7][7:0], datamem[7][15:8], datamem[7][23:16], datamem[7][31:24]};
     //assign rabbitout = datamem[4];
     //assign chickenout = datamem[3];
     // 然后我们要根据控制信号来确定我要读还是要�?
@@ -90,8 +92,8 @@ module DATAMEM(
     //Write Block
     always @(negedge clk)
     begin
-        datamem[10] = legsin;
-        datamem[9] = headin;
+        datamem[10] = {legsin[7:0], legsin[15:8], legsin[23:16], legsin[31:24]};
+        datamem[9] = {headin[7:0], headin[15:8], headin[23:16], headin[31:24]};
         //datamem[2] = legsin;
         //datamem[1] = headin;
         if (wr_en)begin //如果是要写，那应该�?�么写呢�?

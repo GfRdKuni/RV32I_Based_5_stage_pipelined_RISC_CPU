@@ -115,7 +115,7 @@ module ALU(ALU_DA,
     wire LESS_M1,LESS_M2,LESS_S,SLT_M;
     
     assign LESS_M1    = ADD_carry ^ SUBctr;  //无符号
-    assign LESS_M2    = ADD_OverFlow ^ ADD_result[31];  //有符号
+    assign LESS_M2    = (ALU_DA[31] != ALU_DB[31]) ? ALU_DA[31] : ADD_result[31];  // signed less-than
     assign LESS_S     = (SIGctr == 1'b1) ? LESS_M1 && ~ALU_ZERO : LESS_M2 && ~ALU_ZERO;  // ——————小于为1？——————
     assign SLT_result = (LESS_S) ? 32'h00000001 : 32'h00000000;
 
@@ -156,7 +156,7 @@ endmodule
     
     
     wire [5:0] shift_n;
-    assign shift_n = 6'd32 - Shiftctr;
+    assign shift_n = 6'd32 - ALU_SHIFT;
     always@(*) begin
         case(Shiftctr)
             2'b00:shift_result   = ALU_DA << ALU_SHIFT;

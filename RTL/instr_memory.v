@@ -30,6 +30,7 @@ module instr_memory(
 	output [31:0]instr;
 
 	reg[31:0] rom[63:0];
+	integer unused_word;
 	
     //rom进行初始�?
     always@(negedge rst_n)begin
@@ -71,6 +72,9 @@ module instr_memory(
         rom[30] = 32'hfe412083;
         rom[31] = 32'hfe812403;
         rom[32] = 32'hfe010113;
+        rom[33] = 32'hf7dff06f; // jal x0, -132: refresh inputs without fetching undefined ROM
+        for (unused_word = 34; unused_word < 64; unused_word = unused_word + 1)
+            rom[unused_word] = 32'h00000013; // NOP in reserved ROM words
         
         // rom[0]  = 32'h00402583;
         // rom[1]  = 32'h00802603;

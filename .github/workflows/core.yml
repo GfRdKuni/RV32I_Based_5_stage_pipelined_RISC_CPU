@@ -1,0 +1,13 @@
+name: Portable CPU verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install RTL tools
+        run: sudo apt-get update && sudo apt-get install -y iverilog yosys
+      - name: Check core application, ALU and memory
+        run: python3 scripts/verify.py
+      - name: Check public core hierarchy and RTL structure
+        run: python3 scripts/structural.py

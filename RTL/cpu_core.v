@@ -323,7 +323,7 @@ module cpu_core(
         .jal(jal_EX),
         .jalr(jalr_EX),
         .B_JUMP(B_JUMP_EX),
-        .ALU_OverFlow(ALU_OverFlow),
+        .ALU_OverFlow(ALU_Overflow),
         .ALU_DC(aluout_EX)
     );
 
